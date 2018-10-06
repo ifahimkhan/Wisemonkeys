@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context="in.wisemonkeys.android.wisemonkeys.UserProfile">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/userview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/user_image"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_margin="5dp"
+                android:scaleType="centerCrop"
+                android:src="@mipmap/me" />
+
+            <TextView
+                android:id="@+id/username"
+                android:layout_width="85dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/user_image"
+                android:layout_marginLeft="2dp"
+                android:layout_marginTop="4dp"
+                android:text="Fahim khan"
+                android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/description"
+                android:text="Hey guys whats up i hope you re having"
+                android:layout_width="220dp"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/username"
+                android:layout_alignStart="@+id/username"
+                android:layout_below="@+id/username"
+                android:layout_marginTop="3dp"
+                android:drawableLeft="@drawable/ic_description"
+                android:drawablePadding="5dp" />
+
+            <TextView
+                android:text="Mumbai"
+                android:id="@+id/location"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@+id/user_image"
+                android:drawableLeft="@drawable/ic_location_on_black_24dp"
+                android:textSize="14sp" />
+
+            <TextView
+                android:text="3"
+                android:id="@+id/questions_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/horizontalScrollView"
+                android:layout_marginEnd="14dp"
+                android:layout_marginRight="14dp"
+                android:layout_toLeftOf="@+id/answers_count"
+                android:layout_toStartOf="@+id/answers_count"
+                android:drawablePadding="2dp"
+                android:drawableRight="@drawable/ic_question_48"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:text="41"
+                android:id="@+id/answers_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/horizontalScrollView"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginEnd="15dp"
+                android:layout_marginRight="15dp"
+                android:drawableRight="@drawable/ic_question_answer_black_24dp"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:text="heyfahim@gmail.com"
+                android:id="@+id/email"
+                android:onClick="sendEmail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/location"
+                android:layout_toEndOf="@+id/user_image"
+                android:layout_toRightOf="@+id/user_image"
+                android:drawableLeft="@drawable/ic_email_black_24dp"
+                android:drawablePadding="3dp"
+                android:textSize="14sp" />
+
+            <TextView
+                android:text="https:www//facebook.com/Ifahimkhan"
+                android:id="@+id/facebook"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/email"
+                android:layout_toEndOf="@+id/user_image"
+                android:layout_toRightOf="@+id/user_image"
+                android:drawableLeft="@drawable/ic_fb"
+                android:drawablePadding="10dp"
+                android:onClick="social"
+                android:textColor="@color/link_blue"
+                android:textSize="12sp" />
+
+            <TextView
+                android:text="https://www.googleplus.com/ifahimkhan"
+                android:id="@+id/google"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/facebook"
+                android:layout_marginRight="5dp"
+                android:layout_toEndOf="@+id/user_image"
+                android:layout_toRightOf="@+id/user_image"
+                android:drawableLeft="@drawable/ic_google_plus_logo_button"
+                android:drawablePadding="10dp"
+                android:onClick="social"
+                android:textColor="@color/link_blue"
+                android:textSize="12sp" />
+
+            <TextView
+                android:text="https://www.twitter.com/i_fahimkhan"
+                android:id="@+id/twitter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/google"
+                android:layout_toEndOf="@+id/user_image"
+                android:layout_toRightOf="@+id/user_image"
+                android:drawableLeft="@drawable/ic_twitter_logo_button"
+                android:drawablePadding="10dp"
+                android:onClick="social"
+                android:textColor="@color/link_blue"
+                android:textSize="12sp" />
+
+            <HorizontalScrollView
+                android:id="@+id/horizontalScrollView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/description"
+                android:background="@color/horizontalcolor"
+                android:padding="4dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:background="@color/horizontalcolor"
+                        android:onClick="latest"
+                        android:padding="2dp"
+                        android:text="Latest"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:text="Polls"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:onClick="unAnswered"
+                        android:text="Unanswered"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:text="Follwers"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:text="Following"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:text="Polls"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:text="Polls"
+                        android:textSize="18sp" />
+                </LinearLayout>
+            </HorizontalScrollView>
+
+            <Button
+                android:id="@+id/points"
+                style="@android:style/Widget.Holo.CompoundButton.Star"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_alignTop="@+id/user_image"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_toEndOf="@+id/location"
+                android:layout_toRightOf="@+id/location"
+                android:background="@android:drawable/btn_star_big_on" />
+
+            <TextView
+                android:id="@+id/pointstext"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/location"
+                android:layout_toEndOf="@+id/points"
+                android:layout_toRightOf="@+id/points"
+                android:text="277" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/data_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/bottom"
+            android:layout_below="@+id/userview">
+
+
+        </RelativeLayout>
+
+
+        <include layout="@layout/layout_bottom_navigation_view" />
+    </RelativeLayout>
+
+</android.support.design.widget.CoordinatorLayout>

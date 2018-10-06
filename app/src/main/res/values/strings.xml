@@ -1,0 +1,56 @@
+<resources>
+    <string name="app_name">Wise Monkeys</string>
+    <string name="title_activity_bottom">Bottom</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Blog</string>
+    <string name="title_notifications">Videos</string>
+    <string name="title_activity_blog">Blog</string>
+    <string name="title_activity_videos">Videos</string>
+    <string name="title_activity_main_fragment">MainFragment</string>
+    <string name="yes">Yes</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_tab">TabActivity</string>
+    <string name="action_settings">Settings</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+    <string name="title_activity_main2">Main2Activity</string>
+
+    <string name="interstitial_ad_sample">Interstitial Ad Sample</string>
+    <string name="start_level">Level 1</string>
+    <string name="next_level">Next Level</string>
+    <!-- -
+        This is an ad unit ID for an interstitial test ad. Replace with your own interstitial ad unit id.
+        For more information, see https://support.google.com/admob/answer/3052638
+    <!- -->
+    <string name="interstitial_ad_unit_id">ca-app-pub-3940256099942544/1033173712</string>
+    <string name="exit_question">Are you sure You want to EXIT?</string>
+    <string name="loading">Please wait...!</string>
+
+    <item name="visible" type="id" />
+    <item name="masked" type="id" />
+
+    <string name="base_url">http://192.168.43.189/wisemonk/</string>
+    <string name="wisemonkeys_register">http://192.168.43.189/wisemonk/</string>
+
+
+    <!-- Wisemonkeys Signup and sign in Details -->
+    <string name="wisemonkeys_nounce_register">http://wisemonkeys.in/api/get_nonce/?controller=user&amp;method=register</string>
+    <!--   <string name="wisemonk_signup">http://wisemonkeys.in/api/user/register/?username=dynamo&amp;
+    email=i_fahimkhan@outlook.com&amp;nonce=4f370e9c8f&amp;display_name=dynamo&amp;notify=both&amp;user_pass=123456</string> -->
+    <string name="wisemonkeys_signup">http://wisemonkeys.in/api/user/register/?username=</string>
+
+    <!--   <string name="wisemonkeys_auth">http://wisemonkeys.in/api/user/generate_auth_cookie/?username=john&password=PASSWORD-HERE</string>       -->
+    <string name="wisemonkeys_auth">http://wisemonkeys.in/api/user/generate_auth_cookie/?</string>
+    <string name="logout">logout</string>
+    <string name="user_data"></string>
+
+    <string name="profile">http://192.168.43.189/wisemonkeys/index.php/api/User_controller/get_profile</string>
+    <string name="doLogin">http://192.168.43.189/wisemonkeys/index.php/api/User_controller/doLogin</string>
+
+    <!--
+    Links Not Working....
+
+    <string name="wisemonkeys_nounce_login">http://wisemonkeys.in/api/get_nonce/?controller=auth&amp;method=generate_auth_cookie</string>
+    <string name="wisemonkey_dologin">http://wisemonkeys.in/api/auth/generate_auth_cookie/?nonce=</string>
+-->
+</resources>

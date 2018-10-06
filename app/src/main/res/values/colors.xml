@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#03A9F4</color>
+    <color name="colorPrimaryDark">#19202e</color>
+    <color name="colorAccent">#FFBB00</color>
+    <array name="dot_colors">
+        <item>#03A9F4</item>
+        <item>#E65100</item>
+        <item>#FFBB00</item>
+    </array>
+
+    <color name="grey">#bfbfbf</color>
+    <color name="white">#fff</color>
+    <color name="black">#000</color>
+    <color name="link_blue">#005ce6</color>
+    <color name="horizontalcolor">#e6e4e4</color>
+</resources>

@@ -1,0 +1,25 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="in.wisemonkeys.android.wisemonkeys.HybridApp.HomeFragment">
+
+    <WebView
+        android:id="@+id/webid"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></WebView>
+
+    <com.bhargavms.dotloader.DotLoader
+        android:id="@+id/text_dot_loader"
+        app:color_array="@array/dot_colors"
+        app:dot_radius="4dp"
+        app:number_of_dots="3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="300dp"
+        android:visibility="invisible" />
+
+
+</FrameLayout>

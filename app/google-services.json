@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "930001263831",
+    "project_id": "firebase-wisemonkeys"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:930001263831:android:837b0b19c7b8f02a",
+        "android_client_info": {
+          "package_name": "in.wisemonkeys.android.wisemonkeys"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "930001263831-vgkch6k0r0fckqbfbq9ngmeg1dkngt6o.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "in.wisemonkeys.android.wisemonkeys",
+            "certificate_hash": "8de80065aaa080000f9c454c83199729ac3e330b"
+          }
+        },
+        {
+          "client_id": "930001263831-dliuajhsm3d0iag5etu47vfsh3cvltd8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC9ytAUIKpWOjW878z_pf_n004n-Vz0DoI"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
